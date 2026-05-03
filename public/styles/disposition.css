@@ -1,0 +1,175 @@
+.header {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.logo {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.header .auth-buttons {
+	margin-left: auto;
+}
+
+.welcome {
+	background-color: var(--panel);
+	padding: 30px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.welcome h2 {
+	margin-top: 0;
+	font-size: 24px;
+	color: var(--accent);
+}
+
+.welcome p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--muted);
+}
+
+.auth-buttons {
+	display: flex;
+	gap: 10px;
+	margin-left: auto;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-left: auto;
+}
+
+.user-info span {
+	color: var(--accent);
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.username-link {
+	background: transparent;
+	color: var(--accent);
+	border: none;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 0;
+}
+
+.username-link:hover {
+	color: #43e97b;
+	text-decoration: underline;
+}
+
+.search-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	flex-wrap: nowrap;
+	margin-left: 20px;
+}
+
+.search-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.search-container input {
+	padding: 10px;
+	width: 303px;
+	border-radius: 5px;
+	border: none;
+}
+
+.search-container button {
+	padding: 10px 15px;
+}
+
+.category-tabs {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	margin-left: 12px;
+}
+
+.category-btn {
+	padding: 7px 11px;
+	font-size: 12px;
+	background: #eef9ee;
+	color: #000 !important;
+	border: 1px solid var(--accent);
+	border-radius: 999px;
+	box-shadow: 0 6px 14px rgba(34, 197, 94, 0.08);
+	letter-spacing: 0.2px;
+}
+
+.category-btn.active {
+	background: var(--accent);
+	color: #fff !important;
+	border-color: #ffffff;
+	font-weight: 700;
+}
+
+/* Grille des films */
+#movies {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 20px;
+}
+
+#movies img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+#movies h3 {
+	font-size: 14px;
+	margin: 10px 0 0;
+}
+
+.nav-buttons {
+	text-align: center;
+}
+
+#prev,
+#next {
+	display: inline-block;
+	margin: 30px 10px;
+}
+
+.stats-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.stat-card {
+	background: #0f0f0f;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.stat-title {
+	color: #cfcfcf;
+	margin-bottom: 12px;
+}
+
+.stat-value {
+	color: var(--accent);
+	font-size: 20px;
+	font-weight: 700;
+}

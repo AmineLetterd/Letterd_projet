@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Letterd</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/disposition.css">
+  <link rel="stylesheet" href="styles/composants.css">
+</head>
+<body>
+  <div class="header">
+    <a href="#" class="logo">
+      <h1>Letter<span class="green-d">d</span></h1>
+    </a>
+    <div class="search-container">
+      <div class="search-row">
+        <input type="text" id="search" placeholder="Rechercher un film ou une série">
+        <button id="searchBtn">Rechercher</button>
+      </div>
+      <div class="category-tabs">
+        <button type="button" class="category-btn active" data-category="all">Tout</button>
+        <button type="button" class="category-btn" data-category="movie">Films</button>
+        <button type="button" class="category-btn" data-category="tv">Series</button>
+      </div>
+    </div>
+    <div class="auth-buttons">
+      <button id="loginBtn" class="btn-login">Connexion</button>
+      <button id="signupBtn" class="btn-signup">Inscription</button>
+    </div>
+  </div>
+
+  <div id="authPopup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <form id="loginForm" class="form-auth">
+        <h2>Connexion</h2>
+        <input type="text" placeholder="Pseudo" required>
+        <input type="password" placeholder="Mot de passe" required>
+        <button type="submit" class="btn-submit">Se connecter</button>
+      </form>
+      <form id="signupForm" class="form-auth hidden">
+        <h2>Inscription</h2>
+        <input type="text" placeholder="Pseudo" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Mot de passe" required>
+        <input type="password" placeholder="Confirmer mot de passe" required>
+        <button type="submit" class="btn-submit">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <h2>Bienvenue sur Letterd</h2>
+    <p>Découvrez les films et séries les plus populaires du moment. Explorez un catalogue complet, recherchez vos contenus favoris, et restez à jour avec les tendances actuelles.</p>
+  </div>
+
+  <div id="movies"></div>
+
+  <div class="nav-buttons">
+    <button id="prev">Page précédente</button>
+    <button id="next">Page suivante</button>
+  </div>
+
+  <script src="scripts/catalogue.js"></script>
+  <script src="scripts/accueil.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+:root {
+  --bg: #141414;
+  --panel: #1f1f1f;
+  --accent: #22c55e;
+  --accent-strong: #16a34a;
+  --muted: #cccccc;
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.green-d {
+  color: var(--accent);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--accent-strong);
+}
+
+.btn-submit {
+  padding: 12px;
+  background-color: var(--accent);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background-color: var(--accent-strong);
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}

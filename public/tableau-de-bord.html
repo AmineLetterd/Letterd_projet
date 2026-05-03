@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Letterd - Dashboard</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/disposition.css">
+  <link rel="stylesheet" href="styles/composants.css">
+</head>
+<body>
+  <div class="header">
+    <a href="#" class="logo">
+      <h1>Letter<span class="green-d">d</span></h1>
+    </a>
+    <div class="search-container">
+      <div class="search-row">
+        <input type="text" id="search" placeholder="Rechercher un film ou une série">
+        <button id="searchBtn">Rechercher</button>
+      </div>
+      <div class="category-tabs">
+        <button type="button" class="category-btn active" data-category="all">Tout</button>
+        <button type="button" class="category-btn" data-category="movie">Films</button>
+        <button type="button" class="category-btn" data-category="tv">Series</button>
+      </div>
+    </div>
+    <div class="auth-buttons">
+      <button id="myListBtn" class="btn-login">Ma liste</button>
+      <button id="profileBtn" class="btn-login">Mon profil</button>
+      <button id="logoutBtn" class="btn-signup">Déconnexion</button>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <h2>Bienvenue sur votre tableau de bord</h2>
+    <p id="welcome-text">Découvrez les films et séries les plus populaires du moment. Explorez un catalogue complet, recherchez vos contenus favoris, et restez à jour avec les tendances actuelles.</p>
+  </div>
+
+  <div id="movies"></div>
+
+  <div class="nav-buttons">
+    <button id="prev">Page précédente</button>
+    <button id="next">Page suivante</button>
+  </div>
+
+  <script src="scripts/catalogue.js"></script>
+  <script src="scripts/tableau-de-bord.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Letterd - Ma liste</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/disposition.css">
+  <link rel="stylesheet" href="styles/composants.css">
+  <link rel="stylesheet" href="styles/profil.css">
+</head>
+<body>
+  <div class="header">
+    <a href="tableau-de-bord.html" class="logo">
+      <h1>Letter<span class="green-d">d</span></h1>
+    </a>
+    <div class="auth-buttons">
+      <span id="username"></span>
+      <button id="logoutBtn" class="btn-signup">Déconnexion</button>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <h2>Ma liste</h2>
+    <p>Retrouvez ici tous les films et séries que vous avez ajoutés.</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card"><span id="total-noted">0</span><p>Films/séries notés</p></div>
+    <div class="stat-card"><span id="movies-noted">0</span><p>Films notés</p></div>
+    <div class="stat-card"><span id="tv-noted">0</span><p>Séries notées</p></div>
+    <div class="stat-card"><span id="avg-note">0</span><p>Moyenne</p></div>
+  </div>
+  <div id="list" class="list-container"></div>
+
+  <div id="editModal" class="detail-modal hidden">
+    <div class="detail-content modal-card">
+      <span class="close-edit">&times;</span>
+      <img class="edit-poster" src="" alt="Poster">
+      <div class="detail-info">
+        <h2 class="edit-title"></h2>
+        <div class="detail-row"><strong>Note TMDB:</strong> <span class="edit-tmdb"></span></div>
+        <label>
+          Note personnelle
+          <input type="number" class="edit-rating" min="1" max="10" step="0.1">
+        </label>
+        <label>
+          Statut
+          <select class="edit-status">
+            <option value="">Sélectionner</option>
+            <option value="A voir">A voir</option>
+            <option value="Déja vu">Déja vu</option>
+            <option value="Pas vu">Pas vu</option>
+          </select>
+        </label>
+        <div class="modal-actions">
+          <button class="update-item">Enregistrer</button>
+          <button class="delete-item-modal">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/ma-liste.js"></script>
+</body>
+</html>
