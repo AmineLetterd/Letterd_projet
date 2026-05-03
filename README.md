@@ -64,6 +64,5 @@ test/
 
 ## Problèmes ?
 
-- **Serveur ne démarre** : `npm install` puis `npm start`
+- **Serveur ne démarre pas** : `npm install` puis `npm start`
 - **Films qui s'affichent pas** : Vérifier la connexion internet et que le serveur tourne
-- **Redirection bizarre** : Regarder la console du navigateur
