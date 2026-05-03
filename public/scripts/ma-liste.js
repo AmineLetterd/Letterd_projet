@@ -10,6 +10,12 @@ usernameDisplay.textContent = userPseudo;
 // Clic sur le profil
 usernameDisplay.addEventListener('click', () => { window.location.href='profil.html'; });
 
+// Déconnexion
+document.getElementById('logoutBtn').addEventListener('click', () => {
+  localStorage.removeItem('userPseudo');
+  window.location.href = 'index.html';
+});
+
 let currentEditItem = null;
 
 // ========== CHARGEMENT DE LA LISTE ==========
